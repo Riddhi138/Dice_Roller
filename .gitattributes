@@ -1,0 +1,10 @@
+# Tell GitHub this is primarily a Dart project
+*.dart linguist-detectable=true
+*.dart linguist-language=Dart
+
+# Ignore generated files from language detection
+build/* linguist-generated=true
+*.g.dart linguist-generated=true
+android/* linguist-vendored=true
+ios/* linguist-vendored=true
+web/* linguist-vendored=true
