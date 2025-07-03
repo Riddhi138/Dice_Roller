@@ -1,10 +1,25 @@
-# Tell GitHub this is primarily a Dart project
+# Mark Dart as the main language
 *.dart linguist-detectable=true
 *.dart linguist-language=Dart
 
-# Ignore generated files from language detection
-build/* linguist-generated=true
-*.g.dart linguist-generated=true
+# Ignore platform-specific generated code
 android/* linguist-vendored=true
 ios/* linguist-vendored=true
+linux/* linguist-vendored=true
+macos/* linguist-vendored=true
+windows/* linguist-vendored=true
 web/* linguist-vendored=true
+
+# Ignore build files
+build/* linguist-generated=true
+.dart_tool/* linguist-generated=true
+
+# Ignore other config files
+*.yaml linguist-documentation=true
+*.yml linguist-documentation=true
+*.json linguist-generated=true
+*.xml linguist-generated=true
+*.gradle linguist-generated=true
+*.pro linguist-generated=true
+*.pbxproj linguist-generated=true
+*.plist linguist-generated=true
